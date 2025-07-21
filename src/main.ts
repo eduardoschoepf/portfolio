@@ -449,9 +449,10 @@ function addWorkExperience(workExperience: WorkExperience[], language: string): 
       workExperience.forEach((work) => {
         // Generate the HTML string for each work experience entry
         workExperienceHTML += ` 
-          <div class='date-range'>${work.period[language as keyof typeof work.period]}</div>
+          
           <div class='job-title'>${work.position[language as keyof typeof work.position]}</div>
           <div class='company-name'>${work.company}, ${work.location}</div>
+          <div class='date-range'>${work.period[language as keyof typeof work.period]}</div>
           <p class='job-description'>${work.description[language as keyof typeof work.description]}</p>
         `;
       });

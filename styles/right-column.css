@@ -29,6 +29,24 @@ section .resume-entry {
     margin-bottom: 50px;
 }
 
+section .job-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 4px;
+}
+
+section .date-range, 
+section .company-name {
+  font-size: 1rem;
+  color: #475569;
+  margin-bottom: 12px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
 .badge {
     background-color: #fff;
     border: 1px solid #ddd;
