@@ -91,15 +91,23 @@ export default function Portfolio() {
       company: 'Direction générale des douanes et droits indirects (DGDDI) - Centre Informatique Douanier',
       location: 'Osny, França',
       role: 'Analista de Suporte de Aplicações Web',
-      description: 'Atuei no suporte a sistemas web críticos em constante adaptação normativa, especialmente durante a transição pós-Brexit (2020–2022). Também contribuí para o treinamento e a integração de novos membros da equipe.',
-      technologies: ['JavaScript', 'XML', 'JSON', 'Automação']
+      description: 'Atuei no suporte a sistemas web críticos em constante adaptação normativa, especialmente durante a transição pós-Brexit (2020–2022). ' + 
+                   'Também contribuí para o treinamento e a integração de novos membros da equipe. ' +
+                   'Além de minhas atribuições formais, sempre busquei contribuir de forma proativa: ' + 
+                   'Identifiquei e automatizei a associação em massa de usuários a uma plataforma de alertas em tempo real, que notificava sobre atualizações e falhas em sistemas críticos que afetavam usuários no âmbito nacional. ' + 
+                   'O processo era manual (via formulário web) e demandava horas de trabalho repetitivo sempre que novos serviços eram adicionados: ' +
+                   '1. Desenvolvi uma estrutura dos dados do formulário em JSON; ' +
+                   '2. Implementei uma rotina assíncrona (usando Fetch API + JavaScript) para enviar os dados em lote; ' +
+                   '3. Eliminei a necessidade de cadastros individuais, escalando o processo para +600 usuários-chave - responsáveis por replicar alertas críticos para suas redes de colaboradores e clientes, ampliando o impacto nacional da solução. ' +
+                   'O sistema original não tinha endpoints para cadastro em massa, então precisei replicar manualmente o comportamento do formulário existente via JavaScript.',
+      technologies: ['JavaScript', 'XML', 'JSON', 'Automação'],
     },
     {
       period: 'Fev 2017 - Jan 2018',
       company: 'Mobixio',
       location: 'Montpellier, França',
       role: 'Desenvolvedor JavaScript | AngularJS | NodeJS',
-      description: 'Em 2017, atuei como desenvolvedor JavaScript na Mobixio, contribuindo para o desenvolvimento do aplicativo móvel multiplataforma Yoozcool, voltado para o monitoramento em tempo real de uma frota de transporte. Utilizei tecnologias como Ionic, Cordova, AngularJS, NodeJS e Leaflet.',
+      description: 'Em 2017, atuei como desenvolvedor JavaScript na Mobixio, contribuindo para o desenvolvimento do aplicativo multiplataforma Yoozcool, voltado para o monitoramento em tempo real de uma frota de transporte. Utilizei tecnologias como Ionic, Cordova, AngularJS, NodeJS e Leaflet. Durante este período, implementei um sistema de autenticação de usuários para controlar acessos à versão demo publicada na web. Esta solução garantiu o acesso seguro aos dados sensíveis através de um controle de permissões.',
       technologies: ['Ionic', 'Cordova', 'AngularJS', 'Node.js', 'Leaflet']
     },
     {
@@ -306,7 +314,8 @@ export default function Portfolio() {
               Sobre Mim
             </h2>
             <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-              Desenvolvedor de software desde 2017, com sólida experiência internacional e atuação em projetos na França. 
+              Desde 2017, construo uma trajetória sólida em desenvolvimento de software, contribuindo para projetos internacionais e me adaptando a diferentes tecnologias para resolver desafios técnicos complexos.
+              Entre 2020 e 2022, participei do suporte a plataformas web estratégicas em constante adaptação normativa, especialmente no cenário de transição pós-Brexit, onde cada ajuste exigia precisão, agilidade e trabalho colaborativo.
               Atualmente, estou disponível para novas oportunidades e projetos como PJ.
             </p>
           </div>
