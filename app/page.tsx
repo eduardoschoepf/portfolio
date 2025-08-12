@@ -286,9 +286,9 @@ export default function Portfolio() {
               </div>
             </div>
             <div className="flex-shrink-0">
-              <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-slate-600 shadow-2xl">
+              <div className="w-56 h-56 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-slate-600 shadow-2xl">
                 <img
-                  src="/2025_photo_cv.jpeg"
+                  src="2025_photo.png"
                   alt="Eduardo Schoepf"
                   className="w-full h-full object-cover"
                 />
