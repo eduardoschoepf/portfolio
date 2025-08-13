@@ -91,15 +91,13 @@ export default function Portfolio() {
       company: 'Direction générale des douanes et droits indirects (DGDDI) - Centre Informatique Douanier',
       location: 'Osny, França',
       role: 'Analista de Suporte de Aplicações Web',
-      description: 'Atuei no suporte a sistemas web críticos em constante adaptação normativa, especialmente durante a transição pós-Brexit (2020–2022). ' + 
-                   'Também contribuí para o treinamento e a integração de novos membros da equipe. ' +
-                   'Além de minhas atribuições formais, sempre busquei contribuir de forma proativa: ' + 
+      description: 'Atuei no suporte a sistemas web críticos em constante adaptação normativa, especialmente durante a transição pós-Brexit (2020–2022). Contribuí para o treinamento e integração de novos membros da equipe.',
+      highlight: {
+        title: 'Automação de Processo Crítico',
+        text: 'Além de minhas atribuições formais, sempre busquei contribuir de forma proativa: ' + 
                    'Identifiquei e automatizei a associação em massa de usuários a uma plataforma de alertas em tempo real, que notificava sobre atualizações e falhas em sistemas críticos que afetavam usuários no âmbito nacional. ' + 
-                   'O processo era manual (via formulário web) e demandava horas de trabalho repetitivo sempre que novos serviços eram adicionados: ' +
-                   '1. Desenvolvi uma estrutura dos dados do formulário em JSON; ' +
-                   '2. Implementei uma rotina assíncrona (usando Fetch API + JavaScript) para enviar os dados em lote; ' +
-                   '3. Eliminei a necessidade de cadastros individuais, escalando o processo para +600 usuários-chave - responsáveis por replicar alertas críticos para suas redes de colaboradores e clientes, ampliando o impacto nacional da solução. ' +
-                   'O sistema original não tinha endpoints para cadastro em massa, então precisei replicar manualmente o comportamento do formulário existente via JavaScript.',
+                   'O processo era manual e demandava horas por falta de endpoints para cadastro em massa. Desenvolvi uma solução em JavaScript (usando Fetch API) para replicar o comportamento do formulário via chamadas assíncronas:',
+      },
       technologies: ['JavaScript', 'XML', 'JSON', 'Automação'],
     },
     {
@@ -107,7 +105,11 @@ export default function Portfolio() {
       company: 'Mobixio',
       location: 'Montpellier, França',
       role: 'Desenvolvedor JavaScript | AngularJS | NodeJS',
-      description: 'Em 2017, atuei como desenvolvedor JavaScript na Mobixio, contribuindo para o desenvolvimento do aplicativo multiplataforma Yoozcool, voltado para o monitoramento em tempo real de uma frota de transporte. Utilizei tecnologias como Ionic, Cordova, AngularJS, NodeJS e Leaflet. Durante este período, implementei um sistema de autenticação de usuários para controlar acessos à versão demo publicada na web. Esta solução garantiu o acesso seguro aos dados sensíveis através de um controle de permissões.',
+      description: 'Em 2017, atuei como desenvolvedor JavaScript na Mobixio, contribuindo para o desenvolvimento do aplicativo multiplataforma Yoozcool, voltado para o monitoramento em tempo real de uma frota de transporte. Utilizei tecnologias como Ionic, Cordova, AngularJS, NodeJS e Leaflet.',
+      highlight: {
+        title: 'Implementação de um formulario de autenticação',
+        text: 'Durante este período, implementei um sistema de autenticação de usuários para controlar acessos à versão demo publicada na web. Esta solução garantiu o acesso seguro aos dados sensíveis através de um controle de permissões.',
+      },
       technologies: ['Ionic', 'Cordova', 'AngularJS', 'Node.js', 'Leaflet']
     },
     {
@@ -455,6 +457,16 @@ export default function Portfolio() {
                       </CardHeader>
                       <CardContent>
                         <p className="text-slate-600 mb-4">{exp.description}</p>
+
+                        {exp.highlight && (
+                          <div className="bg-blue-50 p-4 rounded-lg mb-4">
+                            <h4 className="font-semibold text-slate-800 mb-2">
+                              Destaque: {exp.highlight.title}
+                            </h4>
+                            <p className="text-slate-600 text-sm">{exp.highlight.text}</p>
+                          </div>
+                        )}
+
                         <div className="flex flex-wrap gap-2">
                           {exp.technologies.map((tech, techIndex) => (
                             <Badge key={techIndex} variant="outline" className="text-xs">
@@ -463,6 +475,7 @@ export default function Portfolio() {
                           ))}
                         </div>
                       </CardContent>
+
                     </Card>
                   </div>
                 </div>
