@@ -272,8 +272,9 @@ export default function Portfolio() {
 
       {/* Hero Section */}
       <section id="home" className="pt-20 pb-16 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
-        <div className="container mx-auto px-16 py-16">
-          <div className="flex flex-col lg:flex-row items-center gap-12">
+        <div className="container py-16 px-4">
+          <div className="max-w-5xl mx-auto">
+            <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="flex-1 text-center lg:text-left">
               <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6">
                 Eduardo Schoepf
@@ -284,6 +285,14 @@ export default function Portfolio() {
               <p className="text-lg text-slate-400 mb-8 max-w-2xl">
                 SAP ABAP | SAP Fiori | BTP | CAP | RAP Model | CDS Views | OData Services | PostgreSQL | Java & Spring Boot | React | Docker 
               </p>
+              <div className="flex flex-wrap gap-4 mb-8">
+                <Badge variant="secondary" className="px-4 py-2 text-sm">
+                  🇫🇷 Experiência Internacional
+                </Badge>
+                <Badge variant="secondary" className="px-4 py-2 text-sm">
+                  👨‍💻 8+ Anos atuando na área de TI
+                </Badge>
+              </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Button 
                   size="lg" 
@@ -305,283 +314,272 @@ export default function Portfolio() {
               </div>
             </div>
           </div>
+          </div>
+          
         </div>
       </section>
 
       {/* About Section */}
       <section id="about" className="py-16 bg-white">
-        <div className="container mx-auto px-16">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-4">
-              Sobre Mim
-            </h2>
-            <div className="grid md:grid-cols-3 gap-8">
-              <Card className="md:col-span-2">
-                <CardContent className="p-6">
-                  <p className="text-slate-600 leading-relaxed">
-                    Desde 2017, construo uma trajetória sólida em desenvolvimento de software, contribuindo para
-                    projetos internacionais e me adaptando a diferentes tecnologias para resolver desafios técnicos
-                    complexos. Entre 2020 e 2022, participei do suporte a plataformas web estratégicas em constante
-                    adaptação normativa, especialmente no cenário de transição pós-Brexit, onde cada ajuste exigia
-                    precisão, agilidade e trabalho colaborativo.
-                  </p>
-                  <p className="text-slate-600 leading-relaxed mt-4">
-                    Atualmente, estou disponível para novas oportunidades e projetos como PJ.
-                  </p>
-                </CardContent>
-              </Card>
+        <div className="container px-16">
+          <div className="max-w-5xl mx-auto">
+              <div className="text-center mb-12">
+              <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-4">
+                Sobre Mim
+              </h2>
+              <div className="grid md:grid-cols-3 gap-8">
+                <Card className="md:col-span-2">
+                  <CardContent className="p-6">
+                    <p className="text-slate-600 leading-relaxed">
+                      Desde 2017, construo uma trajetória sólida em desenvolvimento de software, contribuindo para
+                      projetos internacionais e me adaptando a diferentes tecnologias para resolver desafios técnicos
+                      complexos. Entre 2020 e 2022, participei do suporte a plataformas web estratégicas em constante
+                      adaptação normativa, especialmente no cenário de transição pós-Brexit, onde cada ajuste exigia
+                      precisão, agilidade e trabalho colaborativo.
+                    </p>
+                    <p className="text-slate-600 leading-relaxed mt-4">
+                      Atualmente, estou disponível para novas oportunidades e projetos como PJ.
+                    </p>
+                  </CardContent>
+                </Card>
 
-              <div className="space-y-4">
-                <Card>
-                  <CardContent className="p-6 text-center">
-                    <div className="text-3xl font-bold text-blue-600 mb-2">8+</div>
-                    <div className="text-sm text-slate-600">Anos de Experiência</div>
-                  </CardContent>
-                </Card>
-                <Card>
-                  <CardContent className="p-6 text-center">
-                    <div className="text-3xl font-bold text-green-600 mb-2">🇫🇷</div>
-                    <div className="text-sm text-slate-600">Experiência Internacional</div>
-                  </CardContent>
-                </Card>
+                <div className="space-y-4">
+                  <Card>
+                    <CardContent className="p-6 text-center">
+                      <div className="text-3xl font-bold text-blue-600 mb-2">8+</div>
+                      <div className="text-sm text-slate-600">Anos atuando na área de TI</div>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardContent className="p-6 text-center">
+                      <div className="text-3xl font-bold text-green-600 mb-2">🇫🇷</div>
+                      <div className="text-sm text-slate-600">Experiência Internacional</div>
+                    </CardContent>
+                  </Card>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h3 className="text-2xl font-semibold text-slate-800 mb-6">
-                Principais Competências
-              </h3>
-              <div className="space-y-4">
-                {skills.map((skill, index) => {
-                  const Icon = skill.icon
-                  return (
-                    <div key={index} className="flex items-center gap-4">
-                      <Icon className="h-6 w-6 text-blue-600" />
-                      <div className="flex-1">
-                        <div className="flex justify-between mb-1">
-                          <span className="font-medium text-slate-700">{skill.name}</span>
-                          <span className="text-sm text-slate-500">{skill.level}%</span>
-                        </div>
-                        <div className="w-full bg-slate-200 rounded-full h-2">
-                          <div 
-                            className="bg-blue-600 h-2 rounded-full transition-all duration-1000"
-                            style={{ width: `${skill.level}%` }}
-                          />
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <h3 className="text-2xl font-semibold text-slate-800 mb-6">
+                  Principais Competências
+                </h3>
+                <div className="space-y-4">
+                  {skills.map((skill, index) => {
+                    const Icon = skill.icon
+                    return (
+                      <div key={index} className="flex items-center gap-4">
+                        <Icon className="h-6 w-6 text-blue-600" />
+                        <div className="flex-1">
+                          <div className="flex justify-between mb-1">
+                            <span className="font-medium text-slate-700">{skill.name}</span>
+                            <span className="text-sm text-slate-500">{skill.level}%</span>
+                          </div>
+                          <div className="w-full bg-slate-200 rounded-full h-2">
+                            <div 
+                              className="bg-blue-600 h-2 rounded-full transition-all duration-1000"
+                              style={{ width: `${skill.level}%` }}
+                            />
+                          </div>
                         </div>
                       </div>
+                    )
+                  })}
+                </div>
+              </div>
+
+
+              <div className="space-y-6">
+                <Card>
+                  <CardContent className="p-6">
+                    <div className="flex items-center gap-4 mb-4">
+                      <Globe className="h-8 w-8 text-blue-600" />
+                      <div>
+                        <h4 className="font-semibold text-slate-800">Experiência Internacional</h4>
+                        <p className="text-slate-600">França</p>
+                      </div>
                     </div>
-                  )
-                })}
+                    <p className="text-slate-600">
+                      Com mais de 8 anos de experiência profissional na França, 
+                      atuei em projetos críticos e em constante adaptação normativa, especialmente durante a transição pós-Brexit (2020–2022).
+                    </p>
+                  </CardContent>
+                </Card>
+
+                <Card>
+                  <CardContent className="p-6">
+                    <div className="flex items-center gap-4 mb-4">
+                      <Code className="h-8 w-8 text-blue-600" />
+                      <div>
+                        <h4 className="font-semibold text-slate-800">Arquiteturas Escaláveis</h4>
+                        <p className="text-slate-600">Hexagonal, REST APIs, Microserviços</p>
+                      </div>
+                    </div>
+                    <p className="text-slate-600">
+                      Especialista em arquiteturas escaláveis, com experiência em design e implementação de soluções baseadas em arquitetura hexagonal, 
+                      desenvolvimento de APIs REST e construção de sistemas distribuídos com microserviços.
+                    </p>
+                  </CardContent>
+                </Card>
               </div>
             </div>
-
-
-            <div className="space-y-6">
-              <Card>
-                <CardContent className="p-6">
-                  <div className="flex items-center gap-4 mb-4">
-                    <Globe className="h-8 w-8 text-blue-600" />
-                    <div>
-                      <h4 className="font-semibold text-slate-800">Experiência Internacional</h4>
-                      <p className="text-slate-600">França</p>
-                    </div>
-                  </div>
-                  <p className="text-slate-600">
-                    Com mais de 8 anos de experiência profissional na França, 
-                    atuei em projetos críticos e em constante adaptação normativa, especialmente durante a transição pós-Brexit (2020–2022).
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent className="p-6">
-                  <div className="flex items-center gap-4 mb-4">
-                    <Code className="h-8 w-8 text-blue-600" />
-                    <div>
-                      <h4 className="font-semibold text-slate-800">Arquiteturas Escaláveis</h4>
-                      <p className="text-slate-600">Hexagonal, REST APIs, Microserviços</p>
-                    </div>
-                  </div>
-                  <p className="text-slate-600">
-                    Especialista em arquiteturas escaláveis, com experiência em design e implementação de soluções baseadas em arquitetura hexagonal, 
-                    desenvolvimento de APIs REST e construção de sistemas distribuídos com microserviços.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
           </div>
+          
         </div>
       </section>
 
       {/* Experience Section */}
       <section id="experience" className="py-16 bg-slate-50">
-        <div className="container mx-auto px-16">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-4">
-              Experiência Profissional
-            </h2>
-            <p className="text-lg text-slate-600">
-              Trajetória em desenvolvimento de software
-            </p>
-          </div>
+        <div className="container px-16">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-4">
+                Experiência Profissional
+              </h2>
+              <p className="text-lg text-slate-600">
+                Trajetória em desenvolvimento de software
+              </p>
+            </div>
 
-          <div className="max-w-4xl mx-auto">
-            <div className="relative">
-              {/* Timeline line */}
-              <div className="absolute left-4 lg:left-1/2 transform lg:-translate-x-px top-0 bottom-0 w-0.5 bg-blue-200"></div>
+            <div className="mx-auto">
+              <div className="relative">
+                {/* Timeline line */}
+                <div className="absolute left-4 lg:left-1/2 transform lg:-translate-x-px top-0 bottom-0 w-0.5 bg-blue-200"></div>
 
-              {experiences.map((exp, index) => (
-                <div key={index} className={`relative flex items-center mb-12 ${
-                  index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
-                }`}>
-                  {/* Timeline dot */}
-                  <div className="absolute left-4 lg:left-1/2 transform lg:-translate-x-1/2 w-4 h-4 bg-blue-600 rounded-full border-4 border-white shadow-lg z-10"></div>
-
-                  <div className={`flex-1 ml-12 lg:ml-0 ${
-                    index % 2 === 0 ? 'lg:pr-0' : 'lg:pl-0'
+                {experiences.map((exp, index) => (
+                  <div key={index} className={`relative flex items-center mb-12 ${
+                    index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
                   }`}>
-                    <Card className="shadow-lg hover:shadow-xl transition-shadow">
-                      <CardHeader>
-                        <div className="flex items-center justify-between mb-2">
-                          <Badge variant="secondary" className="text-xs">
-                            <Calendar className="mr-1 h-3 w-3" />
-                            {exp.period}
-                          </Badge>
-                          <MapPin className="h-4 w-4 text-slate-500" />
-                        </div>
-                        <CardTitle className="text-xl text-slate-800">{exp.role}</CardTitle>
-                        <CardDescription className="text-lg font-medium text-blue-600">
-                          {exp.company} • {exp.location}
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <p className="text-slate-600 mb-4">{exp.description}</p>
+                    {/* Timeline dot */}
+                    <div className="absolute left-4 lg:left-1/2 transform lg:-translate-x-1/2 w-4 h-4 bg-blue-600 rounded-full border-4 border-white shadow-lg z-10"></div>
 
-                        {exp.highlight && (
-                          <div className="bg-blue-50 p-4 rounded-lg mb-4">
-                            <h4 className="font-semibold text-slate-800 mb-2">
-                              Destaque: {exp.highlight.title}
-                            </h4>
-                            <p className="text-slate-600 text-sm">{exp.highlight.text}</p>
-                          </div>
-                        )}
-
-                        <div className="flex flex-wrap gap-2">
-                          {exp.technologies.map((tech, techIndex) => (
-                            <Badge key={techIndex} variant="outline" className="text-xs">
-                              {tech}
+                    <div className={`flex-1 ml-12 lg:ml-0 ${
+                      index % 2 === 0 ? 'lg:pr-0' : 'lg:pl-0'
+                    }`}>
+                      <Card className="shadow-lg hover:shadow-xl transition-shadow">
+                        <CardHeader>
+                          <div className="flex items-center justify-between mb-2">
+                            <Badge variant="secondary" className="text-xs">
+                              <Calendar className="mr-1 h-3 w-3" />
+                              {exp.period}
                             </Badge>
-                          ))}
-                        </div>
-                      </CardContent>
+                            <MapPin className="h-4 w-4 text-slate-500" />
+                          </div>
+                          <CardTitle className="text-xl text-slate-800">{exp.role}</CardTitle>
+                          <CardDescription className="text-lg font-medium text-blue-600">
+                            {exp.company} • {exp.location}
+                          </CardDescription>
+                        </CardHeader>
+                        <CardContent>
+                          <p className="text-slate-600 mb-4">{exp.description}</p>
 
-                    </Card>
+                          {exp.highlight && (
+                            <div className="bg-blue-50 p-4 rounded-lg mb-4">
+                              <h4 className="font-semibold text-slate-800 mb-2">
+                                Destaque: {exp.highlight.title}
+                              </h4>
+                              <p className="text-slate-600 text-sm">{exp.highlight.text}</p>
+                            </div>
+                          )}
+
+                          <div className="flex flex-wrap gap-2">
+                            {exp.technologies.map((tech, techIndex) => (
+                              <Badge key={techIndex} variant="outline" className="text-xs">
+                                {tech}
+                              </Badge>
+                            ))}
+                          </div>
+                        </CardContent>
+
+                      </Card>
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
+          
         </div>
       </section>
 
       {/* Projects Section */}
       <section id="projects" className="py-16 bg-white">
         <div className="container mx-auto px-16">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-4">
-              Projetos
-            </h2>
-            <p className="text-lg text-slate-600">
-              Lista de projetos em curso e concluídos
-            </p>
-          </div>
+          <div className="max-w-5xl mx-auto">
+              <div className="text-center mb-12">
+              <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-4">
+                Projetos
+              </h2>
+              <p className="text-lg text-slate-600">
+                Lista de projetos em curso e concluídos
+              </p>
+            </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map((project, index) => (
-              <Card key={index} className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                <CardHeader>
-                  <div className="flex items-center justify-between mb-2">
-                    <a
-                      href={project.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 group"
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {projects.map((project, index) => (
+                <Card key={index} className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                  <CardHeader>
+                    <div className="flex items-center justify-between mb-2">
+                      <a
+                        href={project.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 group"
+                      >
+                        <CardTitle className="text-xl text-slate-800 group-hover:text-blue-600 transition-colors">
+                          {project.title}
+                        </CardTitle>
+                        <ExternalLink className="h-5 w-5 text-slate-400 group-hover:text-blue-600 transition-colors" />
+                      </a>
+                    </div>
+                    <Badge 
+                      variant={project.status === 'Concluído' ? 'default' : 'secondary'}
+                      className="w-fit"
                     >
-                      <CardTitle className="text-xl text-slate-800 group-hover:text-blue-600 transition-colors">
-                        {project.title}
-                      </CardTitle>
-                      <ExternalLink className="h-5 w-5 text-slate-400 group-hover:text-blue-600 transition-colors" />
-                    </a>
-                  </div>
-                  <Badge 
-                    variant={project.status === 'Concluído' ? 'default' : 'secondary'}
-                    className="w-fit"
-                  >
-                    <CheckCircle className="mr-1 h-3 w-3" />
-                    {project.status}
-                  </Badge>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-slate-600 mb-4">{project.description}</p>
-                  <div className="flex flex-wrap gap-2">
-                    {project.technologies.map((tech, techIndex) => (
-                      <Badge key={techIndex} variant="outline" className="text-xs">
-                        {tech}
-                      </Badge>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+                      <CheckCircle className="mr-1 h-3 w-3" />
+                      {project.status}
+                    </Badge>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-slate-600 mb-4">{project.description}</p>
+                    <div className="flex flex-wrap gap-2">
+                      {project.technologies.map((tech, techIndex) => (
+                        <Badge key={techIndex} variant="outline" className="text-xs">
+                          {tech}
+                        </Badge>
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
           </div>
+          
         </div>
       </section>
 
       {/* Education Section */}
       <section id="education" className="py-16 bg-slate-50">
         <div className="container mx-auto px-16">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-4">
-              Formação e Certificados
-            </h2>
-            <p className="text-lg text-slate-600">
-              Educação continuada e certificações em tecnologias
-            </p>
-          </div>
+          <div className="max-w-5xl mx-auto">
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
-            {certifications.map((cert, index) => (
-              <a 
-                href={cert.url} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="no-underline"
-                key={index}>
-                <Card className="text-center hover:shadow-lg transition-shadow">
-                  <CardHeader className="pb-4">
-                    <Award className="h-12 w-12 text-blue-600 mx-auto mb-4" />
-                    <CardTitle className="text-lg text-slate-800">{cert.title}</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="font-medium text-blue-600 mb-1">{cert.institution}</p>
-                    <p className="text-sm text-slate-500 mb-2">{cert.location}</p>
-                    <Badge variant="outline" className="text-xs">
-                      {cert.year} • {cert.type}
-                    </Badge>
-                  </CardContent>
-                </Card>
-              </a>
-            ))}
-          </div>
+              {/* Section Header */}
+            <div className="text-center mb-12">
+              <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-4">
+                Formação e Certificados
+              </h2>
+              <p className="text-lg text-slate-600">
+                Educação continuada e certificações em tecnologias
+              </p>
+            </div>
 
-          {/* Additional Education */}
-            <div className="mt-16 grid md:grid-cols-2 gap-8">
+            {/* Principal Education */}
+            <div className="space-y-4 grid gap-8 lg:grid-cols-2">
               <Card className="shadow-lg">
                 <CardHeader>
                   <CardTitle className="flex items-center gap-3">
                     <GraduationCap className="h-6 w-6 text-blue-600" />
-                    Engenharia de Software
+                      Engenharia de Software
                   </CardTitle>
                   <CardDescription>UNINTER • 2023 - Em andamento</CardDescription>
                 </CardHeader>
@@ -589,7 +587,7 @@ export default function Portfolio() {
                   <p className="text-slate-600">
                     Graduação focada em aprimorar habilidades técnicas e de gerenciamento de projetos, 
                     complementando a experiência prática com fundamentos teóricos sólidos.
-                  </p>
+                  </p>                
                 </CardContent>
               </Card>
 
@@ -597,7 +595,7 @@ export default function Portfolio() {
                 <CardHeader>
                   <CardTitle className="flex items-center gap-3">
                     <Code className="h-6 w-6 text-blue-600" />
-                    Desenvolvedor de software (nível 5 do Quadro Europeu de Qualificações)
+                      Desenvolvedor de software (nível 5 do Quadro Europeu de Qualificações)
                   </CardTitle>
                   <CardDescription>OBJECTIF 3W • 2015 - 2016</CardDescription>
                 </CardHeader>
@@ -609,147 +607,185 @@ export default function Portfolio() {
                 </CardContent>
               </Card>
             </div>
+
+            <div className="mt-16 grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
+              {certifications.map((cert, index) => (
+                <a 
+                  href={cert.url} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="no-underline"
+                  key={index}>
+                  <Card className="text-center hover:shadow-lg transition-shadow">
+                    
+                    <CardHeader>
+                      <div className="flex gap-3">
+                        <Award className="w-6 h-6 text-blue-600 mt-1 flex-shrink-0" />
+                        <div className="flex gap-3 flex-1 items-center justify-center">
+                          <CardTitle >{cert.title}</CardTitle>
+                        </div>
+                      </div> 
+                    </CardHeader>
+                    <CardContent>
+                      <p className="font-medium text-blue-600 mb-1">{cert.institution}</p>
+                      <p className="text-sm text-slate-500 mb-2">{cert.location}</p>
+                      <Badge variant="outline" className="text-xs">
+                        {cert.year} • {cert.type}
+                      </Badge>
+                    </CardContent>
+                  </Card>
+                </a>
+              ))}
+            </div>
+
+          </div>
+          
         </div>
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-16 bg-white">
-        <div className="container mx-auto px-16">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-4">
-              Entre em Contato
-            </h2>
-            <p className="text-lg text-slate-600">
-              Vamos conversar sobre oportunidades e projetos interessantes
-            </p>
-          </div>
+      <section id="contact" className="py-16 px-4 bg-white">
+        <div className="container">
+          <div className="max-w-5xl mx-auto">
 
-          <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-            <div className="space-y-8">
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                  <Mail className="h-6 w-6 text-blue-600" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-slate-800">Email</h3>
-                  <p className="text-slate-600">eduardo.schoepf@hotmail.com</p>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                  <Phone className="h-6 w-6 text-blue-600" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-slate-800">Telefone</h3>
-                  <p className="text-slate-600">+55 (51) 9 9704-1908</p>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                  <MapPin className="h-6 w-6 text-blue-600" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-slate-800">Localização</h3>
-                  <p className="text-slate-600">Santa Cruz do Sul, Brasil</p>
-                </div>
-              </div>
-
-              <div className="flex gap-4 pt-4">
-                <Button 
-                  variant="outline" 
-                  size="lg" 
-                  className="flex-1"
-                  onClick={() => window.open('https://www.linkedin.com/in/eduardoschoepf/', '_blank')}
-                >
-                  <Linkedin className="mr-2 h-5 w-5" />
-                  LinkedIn
-                </Button>
-                <Button 
-                  variant="outline" 
-                  size="lg" 
-                  className="flex-1"
-                  onClick={() => window.open('https://github.com/eduardoschoepf', '_blank')}
-                >
-                  <Github className="mr-2 h-5 w-5" />
-                  GitHub
-                </Button>
-              </div>
+            <div className="text-center mb-12">
+              <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-4">
+                Entre em Contato
+              </h2>
+              <p className="text-lg text-slate-600">
+                Vamos conversar sobre oportunidades e projetos interessantes
+              </p>
             </div>
 
-            <Card className="shadow-lg">
-              <CardHeader>
-                <CardTitle>Envie uma Mensagem</CardTitle>
-                <CardDescription>
-                  Preencha o formulário e entrarei em contato em breve
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-4">
-                  <div className="grid grid-cols-2 gap-4">
-                    <div>
-                      <label className="text-sm font-medium text-slate-700 mb-2 block">
-                        Nome
-                      </label>
-                      <Input 
-                        placeholder="Seu nome" 
-                        name="name"
-                        value={formData.name}
-                        onChange={handleInputChange}
-                        required
-                      />
-                    </div>
-                    <div>
-                      <label className="text-sm font-medium text-slate-700 mb-2 block">
-                        Email
-                      </label>
-                      <Input 
-                        type="email" 
-                        placeholder="seu@email.com" 
-                        name="email"
-                        value={formData.email}
-                        onChange={handleInputChange}
-                        required
-                      />
-                    </div>
+            <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+              <div className="space-y-8">
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                    <Mail className="h-6 w-6 text-blue-600" />
                   </div>
                   <div>
-                    <label className="text-sm font-medium text-slate-700 mb-2 block">
-                      Assunto
-                    </label>
-                    <Input 
-                      placeholder="Assunto da mensagem" 
-                      name="subject"
-                      value={formData.subject}
-                      onChange={handleInputChange}
-                      required
-                    />
+                    <h3 className="font-semibold text-slate-800">Email</h3>
+                    <p className="text-slate-600">eduardo.schoepf@hotmail.com</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                    <Phone className="h-6 w-6 text-blue-600" />
                   </div>
                   <div>
-                    <label className="text-sm font-medium text-slate-700 mb-2 block">
-                      Mensagem
-                    </label>
-                    <Textarea 
-                      placeholder="Sua mensagem..." 
-                      rows={5}
-                      name="message"
-                      value={formData.message}
-                      onChange={handleInputChange}
-                      required
-                    />
+                    <h3 className="font-semibold text-slate-800">Telefone</h3>
+                    <p className="text-slate-600">+55 (51) 9 9704-1908</p>
                   </div>
+                </div>
+
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                    <MapPin className="h-6 w-6 text-blue-600" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-slate-800">Localização</h3>
+                    <p className="text-slate-600">Santa Cruz do Sul, Brasil</p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4 pt-4">
                   <Button 
-                    onClick={sendWhatsAppMessage}
-                    className="w-full bg-green-600 hover:bg-green-700 text-white pt-2.5"
+                    variant="outline" 
+                    size="lg" 
+                    className="flex-1"
+                    onClick={() => window.open('https://www.linkedin.com/in/eduardoschoepf/', '_blank')}
                   >
-                    <MessageSquareText className="mr-2 h-5 w-5" />
-                    Enviar WhatsApp
+                    <Linkedin className="mr-2 h-5 w-5" />
+                    LinkedIn
                   </Button>
-                </form>
-              </CardContent>
-            </Card>
+                  <Button 
+                    variant="outline" 
+                    size="lg" 
+                    className="flex-1"
+                    onClick={() => window.open('https://github.com/eduardoschoepf', '_blank')}
+                  >
+                    <Github className="mr-2 h-5 w-5" />
+                    GitHub
+                  </Button>
+                </div>
+              </div>
+
+              <Card className="shadow-lg">
+                <CardHeader>
+                  <CardTitle>Envie uma Mensagem</CardTitle>
+                  <CardDescription>
+                    Preencha o formulário e entrarei em contato em breve
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <form onSubmit={handleSubmit} className="space-y-4">
+                    <div className="grid grid-cols-2 gap-4">
+                      <div>
+                        <label className="text-sm font-medium text-slate-700 mb-2 block">
+                          Nome
+                        </label>
+                        <Input 
+                          placeholder="Seu nome" 
+                          name="name"
+                          value={formData.name}
+                          onChange={handleInputChange}
+                          required
+                        />
+                      </div>
+                      <div>
+                        <label className="text-sm font-medium text-slate-700 mb-2 block">
+                          Email
+                        </label>
+                        <Input 
+                          type="email" 
+                          placeholder="seu@email.com" 
+                          name="email"
+                          value={formData.email}
+                          onChange={handleInputChange}
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <label className="text-sm font-medium text-slate-700 mb-2 block">
+                        Assunto
+                      </label>
+                      <Input 
+                        placeholder="Assunto da mensagem" 
+                        name="subject"
+                        value={formData.subject}
+                        onChange={handleInputChange}
+                        required
+                      />
+                    </div>
+                    <div>
+                      <label className="text-sm font-medium text-slate-700 mb-2 block">
+                        Mensagem
+                      </label>
+                      <Textarea 
+                        placeholder="Sua mensagem..." 
+                        rows={5}
+                        name="message"
+                        value={formData.message}
+                        onChange={handleInputChange}
+                        required
+                      />
+                    </div>
+                    <Button 
+                      onClick={sendWhatsAppMessage}
+                      className="w-full bg-green-600 hover:bg-green-700 text-white pt-2.5"
+                    >
+                      <MessageSquareText className="mr-2 h-5 w-5" />
+                      Enviar WhatsApp
+                    </Button>
+                  </form>
+                </CardContent>
+              </Card>
+            </div>
+            
           </div>
+          
         </div>
       </section>
 
