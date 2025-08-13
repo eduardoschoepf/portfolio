@@ -96,7 +96,8 @@ export default function Portfolio() {
         title: 'Automação de Processo Crítico',
         text: 'Além de minhas atribuições formais, sempre busquei contribuir de forma proativa: ' + 
                    'Identifiquei e automatizei a associação em massa de usuários a uma plataforma de alertas em tempo real, que notificava sobre atualizações e falhas em sistemas críticos que afetavam usuários no âmbito nacional. ' + 
-                   'O processo era manual e demandava horas por falta de endpoints para cadastro em massa. Desenvolvi uma solução em JavaScript (usando Fetch API) para replicar o comportamento do formulário via chamadas assíncronas:',
+                   'O processo era manual e demandava horas por falta de endpoints para cadastro em massa. ' + 
+                   'Desenvolvi uma solução em JavaScript (usando Fetch API) para replicar o comportamento do formulário via chamadas assíncronas, eliminando a necessidade de cadastros individuais, escalando o processo para +600 usuários-chave, responsáveis por replicar alertas para suas redes de colaboradores e clientes, ampliando o impacto nacional da solução.',
       },
       technologies: ['JavaScript', 'XML', 'JSON', 'Automação'],
     },
