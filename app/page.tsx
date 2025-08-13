@@ -273,7 +273,7 @@ export default function Portfolio() {
 
       {/* Hero Section */}
       <section id="home" className="pt-20 pb-16 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
-        <div className="container py-16 px-4">
+        <div className="container mx-auto py-16 px-4">
           <div className="max-w-5xl mx-auto">
             <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="flex-1 text-center lg:text-left">
@@ -286,14 +286,7 @@ export default function Portfolio() {
               <p className="text-lg text-slate-400 mb-8 max-w-2xl">
                 SAP ABAP | SAP Fiori | BTP | CAP | RAP Model | CDS Views | OData Services | PostgreSQL | Java & Spring Boot | React | Docker 
               </p>
-              <div className="flex flex-wrap gap-4 mb-8">
-                <Badge variant="secondary" className="px-4 py-2 text-sm">
-                  🇫🇷 Experiência Internacional
-                </Badge>
-                <Badge variant="secondary" className="px-4 py-2 text-sm">
-                  👨‍💻 8+ Anos atuando na área de TI
-                </Badge>
-              </div>
+              
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Button 
                   size="lg" 
@@ -322,14 +315,14 @@ export default function Portfolio() {
 
       {/* About Section */}
       <section id="about" className="py-16 bg-white">
-        <div className="container px-16">
+        <div className="container mx-auto px-16">
           <div className="max-w-5xl mx-auto">
               <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-4">
                 Sobre Mim
               </h2>
               <div className="grid md:grid-cols-3 gap-8">
-                <Card className="md:col-span-2">
+                <Card className="md:col-span-3">
                   <CardContent className="p-6">
                     <p className="text-slate-600 leading-relaxed">
                       Desde 2017, construo uma trajetória sólida em desenvolvimento de software, contribuindo para
@@ -342,22 +335,7 @@ export default function Portfolio() {
                       Atualmente, estou disponível para novas oportunidades e projetos como PJ.
                     </p>
                   </CardContent>
-                </Card>
-
-                <div className="space-y-4">
-                  <Card>
-                    <CardContent className="p-6 text-center">
-                      <div className="text-3xl font-bold text-blue-600 mb-2">8+</div>
-                      <div className="text-sm text-slate-600">Anos atuando na área de TI</div>
-                    </CardContent>
-                  </Card>
-                  <Card>
-                    <CardContent className="p-6 text-center">
-                      <div className="text-3xl font-bold text-green-600 mb-2">🇫🇷</div>
-                      <div className="text-sm text-slate-600">Experiência Internacional</div>
-                    </CardContent>
-                  </Card>
-                </div>
+                </Card>  
               </div>
             </div>
             <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -389,40 +367,20 @@ export default function Portfolio() {
                 </div>
               </div>
 
-
-              <div className="space-y-6">
-                <Card>
-                  <CardContent className="p-6">
-                    <div className="flex items-center gap-4 mb-4">
-                      <Globe className="h-8 w-8 text-blue-600" />
-                      <div>
-                        <h4 className="font-semibold text-slate-800">Experiência Internacional</h4>
-                        <p className="text-slate-600">França</p>
-                      </div>
-                    </div>
-                    <p className="text-slate-600">
-                      Com mais de 8 anos de experiência profissional na França, 
-                      atuei em projetos críticos e em constante adaptação normativa, especialmente durante a transição pós-Brexit (2020–2022).
-                    </p>
-                  </CardContent>
-                </Card>
-
-                <Card>
-                  <CardContent className="p-6">
-                    <div className="flex items-center gap-4 mb-4">
-                      <Code className="h-8 w-8 text-blue-600" />
-                      <div>
-                        <h4 className="font-semibold text-slate-800">Arquiteturas Escaláveis</h4>
-                        <p className="text-slate-600">Hexagonal, REST APIs, Microserviços</p>
-                      </div>
-                    </div>
-                    <p className="text-slate-600">
-                      Especialista em arquiteturas escaláveis, com experiência em design e implementação de soluções baseadas em arquitetura hexagonal, 
-                      desenvolvimento de APIs REST e construção de sistemas distribuídos com microserviços.
-                    </p>
-                  </CardContent>
-                </Card>
-              </div>
+              <div className="space-y-4">
+                  <Card>
+                    <CardContent className="p-6 text-center">
+                      <div className="text-3xl font-bold text-blue-600 mb-2">8+</div>
+                      <div className="text-sm text-slate-600">Anos atuando na área de TI</div>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardContent className="p-6 text-center">
+                      <div className="text-3xl font-bold text-green-600 mb-2">🇫🇷</div>
+                      <div className="text-sm text-slate-600">Experiência Internacional</div>
+                    </CardContent>
+                  </Card>
+                </div>
             </div>
           </div>
           
@@ -431,7 +389,7 @@ export default function Portfolio() {
 
       {/* Experience Section */}
       <section id="experience" className="py-16 bg-slate-50">
-        <div className="container px-16">
+        <div className="container mx-auto px-16">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-4">
