@@ -313,13 +313,38 @@ export default function Portfolio() {
             <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-4">
               Sobre Mim
             </h2>
-            <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-              Desde 2017, construo uma trajetória sólida em desenvolvimento de software, contribuindo para projetos internacionais e me adaptando a diferentes tecnologias para resolver desafios técnicos complexos.
-              Entre 2020 e 2022, participei do suporte a plataformas web estratégicas em constante adaptação normativa, especialmente no cenário de transição pós-Brexit, onde cada ajuste exigia precisão, agilidade e trabalho colaborativo.
-              Atualmente, estou disponível para novas oportunidades e projetos como PJ.
-            </p>
-          </div>
+            <div className="grid md:grid-cols-3 gap-8">
+              <Card className="md:col-span-2">
+                <CardContent className="p-6">
+                  <p className="text-slate-600 leading-relaxed">
+                    Desde 2017, construo uma trajetória sólida em desenvolvimento de software, contribuindo para
+                    projetos internacionais e me adaptando a diferentes tecnologias para resolver desafios técnicos
+                    complexos. Entre 2020 e 2022, participei do suporte a plataformas web estratégicas em constante
+                    adaptação normativa, especialmente no cenário de transição pós-Brexit, onde cada ajuste exigia
+                    precisão, agilidade e trabalho colaborativo.
+                  </p>
+                  <p className="text-slate-600 leading-relaxed mt-4">
+                    Atualmente, estou disponível para novas oportunidades e projetos como PJ.
+                  </p>
+                </CardContent>
+              </Card>
 
+              <div className="space-y-4">
+                <Card>
+                  <CardContent className="p-6 text-center">
+                    <div className="text-3xl font-bold text-blue-600 mb-2">8+</div>
+                    <div className="text-sm text-slate-600">Anos de Experiência</div>
+                  </CardContent>
+                </Card>
+                <Card>
+                  <CardContent className="p-6 text-center">
+                    <div className="text-3xl font-bold text-green-600 mb-2">🇫🇷</div>
+                    <div className="text-sm text-slate-600">Experiência Internacional</div>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+          </div>
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h3 className="text-2xl font-semibold text-slate-800 mb-6">
@@ -348,6 +373,7 @@ export default function Portfolio() {
                 })}
               </div>
             </div>
+
 
             <div className="space-y-6">
               <Card>
