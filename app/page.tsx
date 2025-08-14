@@ -125,24 +125,31 @@ export default function Portfolio() {
 
   const projects = [
     {
-      title: 'Pedidos de venda',
-      description: 'Visão Geral do Desenvolvimento RAP no Eclipse',
-      technologies: ['Fiori Elements', 'CDS Views ', 'OData Services', 'RAP Model'],
-      url: 'https://github.com/eduardoschoepf/sap-fiori',
+      title: 'Autódromo Internacional de Santa Cruz do Sul',
+      description: 'Projeto voluntário desenvolvido para promover o autódromo local, destacando sua infraestrutura e eventos.',
+      technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Design Responsivo'],
+      url: 'https://eduardoschoepf.github.io/aiscs/',
       status: 'Concluído'
     },
     {
-      title: 'Landing page delivery',
-      description: 'Landing page responsiva para promover aplicativo de delivery.',
+      title: 'Landing Page - SaaS Delivery Solution',
+      description: 'Página de conversão otimizada para captação de clientes B2B para plataforma SaaS de delivery',
       technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Design Responsivo'],
       url: 'https://eduardoschoepf.github.io/landing-page-la-commande/',
       status: 'Concluído'
     },
     {
-      title: 'La Commande App',
-      description: 'Aplicativo para encomendar lanches via WhatsApp, facilitando o pedido rápido e prático.',
+      title: 'La Commande App (SaaS)',
+      description: 'Solução SaaS para restaurantes e lanchonetes que automatiza pedidos via WhatsApp, reduzindo erros e aumentando a eficiência do atendimento.',
       technologies: ['React', 'TypeScript', 'WhatsApp API', 'Tailwind CSS', 'Design Responsivo'],
       url: 'https://eduardoschoepf.github.io/la-commande/',
+      status: 'Concluído'
+    },
+    {
+      title: 'Estudo Prático - SAP RAP no Eclipse (Pedidos de Venda)',
+      description: 'Visão Geral do Desenvolvimento RAP no Eclipse. Projeto demonstrando implementação do ABAP RESTful Application Programming Model (RAP) com foco em pedidos de venda. Inclui criação de entidades, serviços e consumo via OData.',
+      technologies: ['Fiori Elements', 'CDS Views ', 'OData Services', 'RAP Model'],
+      url: 'https://github.com/eduardoschoepf/sap-fiori/',
       status: 'Concluído'
     },
     {
