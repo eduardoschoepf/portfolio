@@ -170,9 +170,17 @@ export default function Portfolio() {
 
   const certifications = [
     {
+      title: 'Programa de formação SAP ABAP',
+      institution: 'Fusion Consultoria',
+      location: '',
+      year: '2025',
+      type: 'Certificado',
+      url: 'https://github.com/eduardoschoepf/sap-fiori'
+    },
+    {
       title: 'Getting started with SAP Cloud Application Programming Model',
       institution: 'SAP Learning',
-      location: 'Online',
+      location: '',
       year: '2025',
       type: 'Certificado',
       url: 'https://www.credly.com/badges/a4acb595-4264-44d6-83cd-f2080cadd0aa'
@@ -180,15 +188,47 @@ export default function Portfolio() {
     {
       title: 'Developing and Extending SAP Fiori Elements Apps',
       institution: 'SAP Learning',
-      location: 'Online',
+      location: '',
       year: '2025',
       type: 'Certificado',
-      url: 'https://github.com/eduardoschoepf/sap-fiori-elements/blob/main/README.md'
+      url: 'https://github.com/eduardoschoepf/sap-fiori-elements'
+    },
+    {
+      title: 'Introduction to ABAP in the Cloud',
+      institution: 'SAP Learning',
+      location: '',
+      year: '2025',
+      type: 'Certificado',
+      url: 'https://learning.sap.com/courses/introduction-to-abap-in-the-cloud'
+    },
+    {
+      title: 'Learning the Basics of ABAP Programming on SAP BTP',
+      institution: 'SAP Learning',
+      location: '',
+      year: '2025',
+      type: 'Certificado',
+      url: 'https://www.credly.com/earner/earned/badge/4253ff0a-c1d5-412d-aa1a-68fcd950aa39'
+    },
+    {
+      title: 'Exploring SAP Business Technology Platform',
+      institution: 'SAP Learning',
+      location: '',
+      year: '2025',
+      type: 'Certificado',
+      url: 'https://www.credly.com/badges/e7fe8f38-c0ce-4827-a0a9-5f44cc712b90'
+    },
+    {
+      title: 'Acquiring Core ABAP Skills',
+      institution: 'SAP Learning',
+      location: '',
+      year: '2024',
+      type: 'Certificado',
+      url: 'https://learning.sap.com/learning-journeys/acquire-core-abap-skills'
     },
     {
       title: 'Containerize Java Microservices with Docker',
       institution: 'IBM',
-      location: 'Online',
+      location: '',
       year: '2024',
       type: 'Certificado',
       url: 'https://courses.edx.org/certificates/6803c37d3b1e4c0ebeb9ada8ff04e510'
@@ -196,7 +236,7 @@ export default function Portfolio() {
     {
       title: 'Create & Load tables in PostgreSQL database',
       institution: 'IBM',
-      location: 'Online',
+      location: '',
       year: '2024',
       type: 'Certificado',
       url: 'https://courses.edx.org/certificates/9f30eeb0a2374e078fa44b34102bfe45'
@@ -204,7 +244,7 @@ export default function Portfolio() {
     {
       title: 'Java Developer',
       institution: 'LinkedIn Learning',
-      location: 'Online',
+      location: '',
       year: '2022',
       type: 'Certificado',
       url: 'https://www.linkedin.com/learning/certificates/96d78831fcc0a542f2c4c8e6681ea8f43ab53bf082a701fb8ac66df5aab784ad'
@@ -468,64 +508,8 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* Projects Section */}
-      <section id="projects" className="py-16 bg-white">
-        <div className="container mx-auto px-16">
-          <div className="max-w-5xl mx-auto">
-              <div className="text-center mb-12">
-              <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-4">
-                Projetos
-              </h2>
-              <p className="text-lg text-slate-600">
-                Lista de projetos em curso e concluídos
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {projects.map((project, index) => (
-                <Card key={index} className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                  <CardHeader>
-                    <div className="flex items-center justify-between mb-2">
-                      <a
-                        href={project.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-2 group"
-                      >
-                        <CardTitle className="text-xl text-slate-800 group-hover:text-blue-600 transition-colors">
-                          {project.title}
-                        </CardTitle>
-                        <ExternalLink className="h-5 w-5 text-slate-400 group-hover:text-blue-600 transition-colors" />
-                      </a>
-                    </div>
-                    <Badge 
-                      variant={project.status === 'Concluído' ? 'default' : 'secondary'}
-                      className="w-fit"
-                    >
-                      <CheckCircle className="mr-1 h-3 w-3" />
-                      {project.status}
-                    </Badge>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-slate-600 mb-4">{project.description}</p>
-                    <div className="flex flex-wrap gap-2">
-                      {project.technologies.map((tech, techIndex) => (
-                        <Badge key={techIndex} variant="outline" className="text-xs">
-                          {tech}
-                        </Badge>
-                      ))}
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-          
-        </div>
-      </section>
-
       {/* Education Section */}
-      <section id="education" className="py-16 bg-slate-50">
+      <section id="education" className="py-16 bg-white">
         <div className="container mx-auto px-16">
           <div className="max-w-5xl mx-auto">
 
@@ -604,6 +588,62 @@ export default function Portfolio() {
               ))}
             </div>
 
+          </div>
+          
+        </div>
+      </section>
+
+      {/* Projects Section */}
+      <section id="projects" className="py-16 bg-slate-50">
+        <div className="container mx-auto px-16">
+          <div className="max-w-5xl mx-auto">
+              <div className="text-center mb-12">
+              <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-4">
+                Projetos
+              </h2>
+              <p className="text-lg text-slate-600">
+                Lista de projetos em curso e concluídos
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {projects.map((project, index) => (
+                <Card key={index} className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                  <CardHeader>
+                    <div className="flex items-center justify-between mb-2">
+                      <a
+                        href={project.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 group"
+                      >
+                        <CardTitle className="text-xl text-slate-800 group-hover:text-blue-600 transition-colors">
+                          {project.title}
+                        </CardTitle>
+                        <ExternalLink className="h-5 w-5 text-slate-400 group-hover:text-blue-600 transition-colors" />
+                      </a>
+                    </div>
+                    <Badge 
+                      variant={project.status === 'Concluído' ? 'default' : 'secondary'}
+                      className="w-fit"
+                    >
+                      <CheckCircle className="mr-1 h-3 w-3" />
+                      {project.status}
+                    </Badge>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-slate-600 mb-4">{project.description}</p>
+                    <div className="flex flex-wrap gap-2">
+                      {project.technologies.map((tech, techIndex) => (
+                        <Badge key={techIndex} variant="outline" className="text-xs">
+                          {tech}
+                        </Badge>
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
           </div>
           
         </div>
