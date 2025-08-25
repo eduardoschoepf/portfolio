@@ -135,7 +135,7 @@ export default function Portfolio() {
       title: 'Landing Page - SaaS Delivery Solution',
       description: 'Página de conversão otimizada para captação de clientes B2B para plataforma SaaS de delivery',
       technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Design Responsivo'],
-      url: 'https://eduardoschoepf.github.io/landing-page-la-commande/',
+      url: 'https://eduardoschoepf.github.io/lacommande-landingpage/',
       status: 'Concluído'
     },
     {
