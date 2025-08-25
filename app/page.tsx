@@ -6,7 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Badge } from '@/components/ui/badge'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
-import { Mail, Phone, MapPin, Container , Linkedin, Github, ExternalLink, Calendar, Award, Code, GraduationCap, Database, Server, Smartphone, Globe, CheckCircle, ArrowRight, Menu, X, MessageSquareText } from 'lucide-react'
+import { Mail, Phone, MapPin, Container , Linkedin, Github, Youtube, ExternalLink, Calendar, Award, Code, GraduationCap, Database, Server, Smartphone, Globe, CheckCircle, ArrowRight, Menu, X, MessageSquareText } from 'lucide-react'
 import { url } from 'inspector'
 
 export default function Portfolio() {
@@ -51,7 +51,7 @@ export default function Portfolio() {
   }
 
   const sendWhatsAppMessage = () => {
-    const phoneNumber = "5551997041908" // Número com código do país (55 para Brasil)
+    const phoneNumber = "+5551997041908" // Número com código do país (55 para Brasil)
     const message = `Olá Eduardo, meu nome é ${formData.name}. ${formData.message} (Contato: ${formData.email})`
     const encodedMessage = encodeURIComponent(message)
     window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, "_blank")
@@ -143,6 +143,20 @@ export default function Portfolio() {
       description: 'Solução SaaS para restaurantes e lanchonetes que automatiza pedidos via WhatsApp, reduzindo erros e aumentando a eficiência do atendimento.',
       technologies: ['React', 'TypeScript', 'WhatsApp API', 'Tailwind CSS', 'Design Responsivo'],
       url: 'https://eduardoschoepf.github.io/la-commande/',
+      status: 'Concluído'
+    },
+    {
+      title: 'Criando um relatório ALV no SAP ECC',
+      description: 'Criando um relatório ALV no SAP ECC: ✅ Criar um REPORT (Transação SE38), ✅ Declarar uma tabela interna, ✅ Seleção de dados da tabela SFLIGHT, ✅ Criar e exibir o relatório ALV',
+      technologies: ['SAP ECC', 'Relatório ALV ', 'ABAP', 'Transação SE38', 'REPORT'],
+      url: 'https://www.youtube.com/watch?v=8kseEHHpUOY&t=3s',
+      status: 'Concluído'
+    },
+    {
+      title: 'Criando um relatório ALV no SAP ECC em 1 minuto',
+      description: 'Criando um relatório ALV no SAP ECC em 1 minuto: ✅ Declarar uma tabela interna, ✅ Seleção de dados da tabela SFLIGHT, ✅ Criar e exibir o relatório ALV',
+      technologies: ['SAP ECC', 'Relatório ALV ', 'ABAP', 'Transação SE38', 'REPORT'],
+      url: 'https://www.youtube.com/shorts/olua3e4vTgc',
       status: 'Concluído'
     },
     {
@@ -713,6 +727,15 @@ export default function Portfolio() {
                   >
                     <Github className="mr-2 h-5 w-5" />
                     GitHub
+                  </Button>
+                  <Button 
+                    variant="outline" 
+                    size="lg" 
+                    className="flex-1"
+                    onClick={() => window.open('https://www.youtube.com/@eduardoschoepf', '_blank')}
+                  >
+                    <Youtube className="mr-2 h-5 w-5" />
+                    Youtube
                   </Button>
                 </div>
               </div>
