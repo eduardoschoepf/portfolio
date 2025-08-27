@@ -125,10 +125,17 @@ export default function Portfolio() {
 
   const projects = [
     {
-      title: 'Autódromo Internacional de Santa Cruz do Sul',
-      description: 'Projeto voluntário desenvolvido para promover o autódromo local, destacando sua infraestrutura e eventos.',
-      technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Design Responsivo'],
-      url: 'https://eduardoschoepf.github.io/aiscs/',
+      title: 'Criando um relatório ALV no SAP ECC em 1 minuto',
+      description: 'Criando um relatório ALV no SAP ECC em 1 minuto: ✅ Declarar uma tabela interna, ✅ Seleção de dados da tabela SFLIGHT, ✅ Criar e exibir o relatório ALV',
+      technologies: ['SAP ECC', 'Relatório ALV ', 'ABAP', 'REPORT'],
+      url: 'https://www.youtube.com/shorts/olua3e4vTgc',
+      status: 'Concluído'
+    },
+    {
+      title: 'La Commande App (SaaS)',
+      description: 'Solução SaaS para restaurantes e lanchonetes que automatiza pedidos via WhatsApp, reduzindo erros e aumentando a eficiência do atendimento.',
+      technologies: ['React', 'TypeScript', 'WhatsApp API', 'Tailwind CSS', 'Design Responsivo'],
+      url: 'https://eduardoschoepf.github.io/la-commande-delivery/',
       status: 'Concluído'
     },
     {
@@ -139,13 +146,6 @@ export default function Portfolio() {
       status: 'Concluído'
     },
     {
-      title: 'La Commande App (SaaS)',
-      description: 'Solução SaaS para restaurantes e lanchonetes que automatiza pedidos via WhatsApp, reduzindo erros e aumentando a eficiência do atendimento.',
-      technologies: ['React', 'TypeScript', 'WhatsApp API', 'Tailwind CSS', 'Design Responsivo'],
-      url: 'https://eduardoschoepf.github.io/la-commande/',
-      status: 'Concluído'
-    },
-    {
       title: 'Criando um relatório ALV no SAP ECC',
       description: 'Criando um relatório ALV no SAP ECC: ✅ Criar um REPORT (Transação SE38), ✅ Declarar uma tabela interna, ✅ Seleção de dados da tabela SFLIGHT, ✅ Criar e exibir o relatório ALV',
       technologies: ['SAP ECC', 'Relatório ALV ', 'ABAP', 'Transação SE38', 'REPORT'],
@@ -153,12 +153,13 @@ export default function Portfolio() {
       status: 'Concluído'
     },
     {
-      title: 'Criando um relatório ALV no SAP ECC em 1 minuto',
-      description: 'Criando um relatório ALV no SAP ECC em 1 minuto: ✅ Declarar uma tabela interna, ✅ Seleção de dados da tabela SFLIGHT, ✅ Criar e exibir o relatório ALV',
-      technologies: ['SAP ECC', 'Relatório ALV ', 'ABAP', 'Transação SE38', 'REPORT'],
-      url: 'https://www.youtube.com/shorts/olua3e4vTgc',
+      title: 'Autódromo Internacional de Santa Cruz do Sul',
+      description: 'Projeto voluntário desenvolvido para promover o autódromo local, destacando sua infraestrutura e eventos.',
+      technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Design Responsivo'],
+      url: 'https://eduardoschoepf.github.io/aiscs/',
       status: 'Concluído'
     },
+    
     {
       title: 'Estudo Prático - SAP RAP no Eclipse (Pedidos de Venda)',
       description: 'Visão Geral do Desenvolvimento RAP no Eclipse. Projeto demonstrando implementação do ABAP RESTful Application Programming Model (RAP) com foco em pedidos de venda. Inclui criação de entidades, serviços e consumo via OData.',
@@ -177,7 +178,7 @@ export default function Portfolio() {
       title: 'Yoozcool Mobile App',
       description: 'Aplicativo multiplataforma para monitoramento de frota em tempo real com mapas interativos.',
       technologies: ['Ionic', 'AngularJS', 'Leaflet', 'Node.js'],
-      url: '',
+      url: 'https://www.busetcar.com/entreprises/yoozcool-solution-cle-en-main-de-systeme-daide-a-lexploitation-proposee-par-mobixio-623608.php',
       status: 'Concluído'
     }
   ]
