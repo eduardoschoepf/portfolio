@@ -193,6 +193,14 @@ export default function Portfolio() {
       url: 'https://github.com/eduardoschoepf/sap-fiori'
     },
     {
+      title: 'Practicing Clean Core Extensibility for SAP S/4HANA Cloud',
+      institution: 'SAP Learning',
+      location: '',
+      year: '2025',
+      type: 'Certificado',
+      url: 'https://badger.learning.sap.com/verify/xatuh-savum-borab-sehob-kovum'
+    },
+    {
       title: 'Getting started with SAP Cloud Application Programming Model',
       institution: 'SAP Learning',
       location: '',
