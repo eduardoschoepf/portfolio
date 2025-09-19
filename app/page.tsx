@@ -180,6 +180,13 @@ export default function Portfolio() {
       technologies: ['Ionic', 'AngularJS', 'Leaflet', 'Node.js'],
       url: 'https://www.busetcar.com/entreprises/yoozcool-solution-cle-en-main-de-systeme-daide-a-lexploitation-proposee-par-mobixio-623608.php',
       status: 'Concluído'
+    },
+    {
+      title: 'BB-8 Droid',
+      description: 'Este projeto é uma animação interativa que recria o droide BB-8 da saga Star Wars, utilizando apenas HTML, CSS e JavaScript. O BB-8 segue o movimento do cursor, criando uma experiência imersiva.',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      url: 'https://eduardoschoepf.github.io/bb-8/',
+      status: 'Concluído'
     }
   ]
 
