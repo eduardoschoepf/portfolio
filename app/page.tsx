@@ -71,12 +71,12 @@ export default function Portfolio() {
   }
 
   const skills = [
+    { name: 'SAP ABAP', icon: Code, level: 70 },  
     { name: 'Java Spring Boot', icon: Code, level: 85 },  
     { name: 'Spring Security', icon: Code, level: 70 }, 
     { name: 'PostgreSQL', icon: Database, level: 85 },
     { name: 'Arquitetura Hexagonal', icon: Code, level: 75 },
-    { name: 'Docker', icon: Container, level: 70 },        
-    { name: 'SAP ABAP', icon: Code, level: 70 },           
+    { name: 'Docker', icon: Container, level: 70 },              
     { name: 'REST APIs', icon: Code, level: 90 },  
     { name: 'JavaScript', icon: Code, level: 95 },         
     { name: 'Node.js', icon: Server, level: 90 },          
