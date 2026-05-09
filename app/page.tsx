@@ -92,13 +92,6 @@ export default function Portfolio() {
       location: 'Osny, França',
       role: 'Analista de Suporte de Aplicações Web',
       description: 'Atuei no suporte a sistemas web críticos em constante adaptação normativa, especialmente durante a transição pós-Brexit (2020–2022). Contribuí para o treinamento e integração de novos membros da equipe.',
-      highlight: {
-        title: 'Automação de Processo Crítico',
-        text: 'Além de minhas atribuições formais, sempre busquei contribuir de forma proativa: ' + 
-                   'Identifiquei e automatizei a associação em massa de usuários a uma plataforma de alertas em tempo real, que notificava sobre atualizações e falhas em sistemas críticos que afetavam usuários no âmbito nacional. ' + 
-                   'O processo era manual e demandava horas por falta de endpoints para cadastro em massa. ' + 
-                   'Desenvolvi uma solução em JavaScript (usando Fetch API) para replicar o comportamento do formulário via chamadas assíncronas, eliminando a necessidade de cadastros individuais, escalando o processo para +600 usuários-chave, responsáveis por replicar alertas para suas redes de colaboradores e clientes, ampliando o impacto nacional da solução.',
-      },
       technologies: ['JavaScript', 'XML', 'JSON', 'Automação'],
     },
     {
@@ -107,10 +100,6 @@ export default function Portfolio() {
       location: 'Montpellier, França',
       role: 'Desenvolvedor JavaScript | AngularJS | NodeJS',
       description: 'Em 2017, atuei como desenvolvedor JavaScript na Mobixio, contribuindo para o desenvolvimento do aplicativo multiplataforma Yoozcool, voltado para o monitoramento em tempo real de uma frota de transporte. Utilizei tecnologias como Ionic, Cordova, AngularJS, NodeJS e Leaflet.',
-      highlight: {
-        title: 'Implementação de um formulario de autenticação',
-        text: 'Durante este período, implementei um sistema de autenticação de usuários para controlar acessos à versão demo publicada na web. Esta solução garantiu o acesso seguro aos dados sensíveis através de um controle de permissões.',
-      },
       technologies: ['Ionic', 'Cordova', 'AngularJS', 'Node.js', 'Leaflet']
     },
     {
@@ -132,46 +121,10 @@ export default function Portfolio() {
       status: 'Concluído'
     },
     {
-      title: 'La Commande App (SaaS)',
-      description: 'Solução SaaS para restaurantes e lanchonetes que automatiza pedidos via WhatsApp, reduzindo erros e aumentando a eficiência do atendimento.',
-      technologies: ['React', 'TypeScript', 'WhatsApp API', 'Tailwind CSS', 'Design Responsivo'],
-      url: 'https://eduardoschoepf.github.io/la-commande-delivery/',
-      status: 'Concluído'
-    },
-    {
-      title: 'Landing Page - SaaS Delivery Solution',
-      description: 'Página de conversão otimizada para captação de clientes B2B para plataforma SaaS de delivery',
-      technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Design Responsivo'],
-      url: 'https://eduardoschoepf.github.io/lacommande-landingpage/',
-      status: 'Concluído'
-    },
-    {
-      title: 'Criando um relatório ALV no SAP ECC',
-      description: 'Criando um relatório ALV no SAP ECC: ✅ Criar um REPORT (Transação SE38), ✅ Declarar uma tabela interna, ✅ Seleção de dados da tabela SFLIGHT, ✅ Criar e exibir o relatório ALV',
-      technologies: ['SAP ECC', 'Relatório ALV ', 'ABAP', 'Transação SE38', 'REPORT'],
-      url: 'https://www.youtube.com/watch?v=8kseEHHpUOY&t=3s',
-      status: 'Concluído'
-    },
-    {
-      title: 'Autódromo Internacional de Santa Cruz do Sul',
-      description: 'Projeto voluntário desenvolvido para promover o autódromo local, destacando sua infraestrutura e eventos.',
-      technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Design Responsivo'],
-      url: 'https://eduardoschoepf.github.io/aiscs/',
-      status: 'Concluído'
-    },
-    
-    {
       title: 'Estudo Prático - SAP RAP no Eclipse (Pedidos de Venda)',
       description: 'Visão Geral do Desenvolvimento RAP no Eclipse. Projeto demonstrando implementação do ABAP RESTful Application Programming Model (RAP) com foco em pedidos de venda. Inclui criação de entidades, serviços e consumo via OData.',
       technologies: ['Fiori Elements', 'CDS Views ', 'OData Services', 'RAP Model'],
       url: 'https://github.com/eduardoschoepf/sap-fiori/',
-      status: 'Concluído'
-    },
-    {
-      title: 'Movies Application',
-      description: 'Este aplicativo foi desenvolvido como resultado dos meus estudos em React Native. O aplicativo se conecta à API do TMDB para obter informações sobre filmes e séries de TV',
-      technologies: ['React Native', 'TMDB API'],
-      url: 'https://github.com/eduardoschoepf/Movies/',
       status: 'Concluído'
     },
     {
